@@ -140,13 +140,15 @@ span{
 	will-change: transform;
     color: #000;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
-    p{
-        color: #000;
-    }
 }
 .sub-box:hover p {
     color: #000;
 }
+
+.sub-box:active {
+	background: #FEB65B;
+}
+
 header.sticky{
 	background: var(--bg-color);
 	padding: 13px 18%;
@@ -155,6 +157,51 @@ header.sticky{
 .about h1{
     color: var(--main-color);
     text-align: center;
+}
+
+.cta .heading h1{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.cta-box{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	margin-top: 5rem;
+	text-align: center;
+}
+.wrap{
+	background: #ffffff;
+	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+	border-radius: 12px;
+	padding: 50px 50px 50px 50px;
+	transition: ease .40s;
+	cursor: pointer;
+}
+.one{
+	background: #ffffff;
+}
+.two{
+	background: #ffffff;
+}
+.three{
+	background: #ffffff
+}
+.one:hover, .two:hover, .three:hover {
+    background: #FEB65B;
+}
+.one:active, .two:active, .three:active {
+    background: #FEB65B;
+}
+.wrap h3{
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+.wrap p{
+	font-size: var(--p-font);
 }
 
 
