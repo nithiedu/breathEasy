@@ -78,7 +78,10 @@ section{
 .home{
 	min-height: 100vh;
 	height: 100%;
-	width: 100%;	
+	width: 100%;
+	background: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -222,8 +225,7 @@ header.sticky{
 	.home{
 		grid-template-columns: 1fr;
 		min-height: 130vh;
-		grid-gap: 1rem;
-		width:115%;
+		grid-gap: 1rem;		
 	}
 	.home-text{
 		padding-top: 55px;
@@ -232,7 +234,7 @@ header.sticky{
 		text-align: center;
 	}
 	.home-img img{
-		width: 440px;
+		width: 340px;
 		height: auto;
 	}
 	.about{
